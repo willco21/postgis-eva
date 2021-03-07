@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  db:
+    container_name: postgis_container
+    image: postgis/postgis:12-master
+    environment:
+      POSTGRES_DB: sampledb
+      POSTGRES_USER: pguser
+      POSTGRES_PASSWORD: password
+    volumes:
+    - ./pgdata:/var/lib/postgresql/data
+    - ./init:/docker-entrypoint-initdb.d
+    ports:
+    - "5432:5432"
