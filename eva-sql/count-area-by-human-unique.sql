@@ -9,7 +9,7 @@ WHERE ST_Contains(
     ),
     human_coordinates
   )
-  AND timestamp BETWEEN '2021-03-14 09:17:48' AND '2021-03-14 09:55:48';
+  AND timestamp BETWEEN '2021-03-15 06:00:00' AND '2021-03-15 18:14:18';
 
 SELECT
   DISTINCT human_coordinates_id
@@ -21,7 +21,7 @@ WHERE ST_Contains(
     ),
     human_coordinates
   )
-  AND timestamp BETWEEN '2021-03-14 09:17:48' AND '2021-03-14 09:55:48';
+  AND timestamp BETWEEN '2021-03-15 06:00:00' AND '2021-03-15 18:14:18';
 
 -- by ST_Within
 
@@ -36,7 +36,7 @@ WHERE ST_Within(
       2451
     )
   )
-  AND timestamp BETWEEN '2021-03-14 09:17:48' AND '2021-03-14 09:55:48';
+  AND timestamp BETWEEN '2021-03-15 06:00:00' AND '2021-03-15 18:14:18';
 
 SELECT
   DISTINCT human_coordinates_id
@@ -48,4 +48,4 @@ WHERE ST_Within(
       2451
     )
   )
-  AND timestamp BETWEEN '2021-03-14 09:17:48' AND '2021-03-14 09:55:48';
+  AND timestamp BETWEEN '2021-03-15 06:00:00' AND '2021-03-15 18:14:18';
